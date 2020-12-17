@@ -1,0 +1,23 @@
+.image {
+	background-color: #469F41
+}
+
+.mode_emploi {
+	font-size: 24px;
+	color: #469F41;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+.etape {
+	font-size: 14px;
+	color: #469F41;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.decouvrir {
+	border-radius: 15px;
+	width: 150px;
+}

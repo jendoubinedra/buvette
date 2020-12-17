@@ -1,0 +1,647 @@
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+body {
+    background-color: #fff;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-size: 12px;
+}
+
+body .container {
+    /*background-image: url("../img/exemple.jpg");*/
+    background-size: 91.5%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#big-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+#informations-administratives {
+    max-width: 490px;
+    margin-left: 20px;
+}
+#bulletin-de-paie {
+    font: 14px;
+}
+#text-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-18 {
+    font-size: 18px;
+}
+.font-arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table {
+    margin-bottom: 0.5%;
+}
+table {
+    background: white;
+    border: 2px solid #005001 !important;
+    border-radius: 10px;
+    width: 50%;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+table td, table th {
+    border: 1px solid #a5d2b4 !important;
+}
+table td:first-child, table th:first-child {
+    
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+table td:last-child, table th:last-child {
+    border-right: 0 none !important;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#detail td, #detail th, #total-info td, #total-info th, #virement td ,#virement th {
+    padding: 0;
+}
+#detail tbody td, #detail tbody th {
+    padding-top: 8px;
+}
+#detail thead td, #detail thead th {
+    padding: 4px;
+}
+#detail td:first-child, table th:first-child {
+    border-bottom-left-radius: 0px;
+}
+#detail td:last-child, table th:last-child {
+    border-bottom-right-radius: 0px;
+}
+.no-radius {
+    border-radius: 0 !important;
+}
+.no-radius-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.no-radius-bottom {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.width-12 {
+    width: 12%;
+}
+.text-center-plus {
+    margin-top: -17px;
+    text-align: center;
+}
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border: 1px solid #005001;
+}
+ul {
+    margin: 0;
+    padding: 0 8px;
+}
+ul li {
+    list-style: none;
+    line-height: 18px;
+}
+.table > thead > tr > th {
+    vertical-align: middle;
+}
+#information td {
+    font-size: 11.5px;
+    padding: 0;
+    text-align: center;
+}
+#informations-etablissement {
+    max-width: 390px;
+}
+.thin-line {
+    border-left: 1px none !important;
+}
+#commentaires {
+    font-size: 10px;
+}
+#commentaires ul li {
+    line-height: 10px;
+    list-style: outside none none;
+}
+#acquis, #commentaires {
+    margin-top: 1.5%;
+}
+.bloc-hover {
+    cursor: pointer;
+}
+.bloc-hover:hover, .bloc-hover:hover .green-bck{
+    background-color: #a3d45e;
+    color: #fff;
+}
+.tooltip.top .tooltip-arrow {
+    border-top-color: #469f41;
+    border-width: 11px 11px 0;
+    bottom: -6px;
+    left: 20% !important;
+    margin-left: 0;
+}
+.tooltip-inner {
+    background-color: #469f41;
+    border-radius: 0;
+    color: #fff;
+    max-width: 200px;
+    padding: 6px 10px;
+    text-align: center;
+}
+#entreprise {
+    
+}
+.h1, h1 {
+    margin-bottom: 0;
+}
+#salarie-info > li:nth-child(2n+1) {
+    float: left;
+    width: 45%;
+}
+#salarie-info {
+    font-size: 14px;
+}
+.margin-left-117 {
+    margin-left: 138px;
+}
+.h5, h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* The Modal (background) */
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 2px solid #5cb85c;
+    border-radius: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+    color: #fff !important;
+    opacity: 1;
+}
+
+.modal-header {
+    padding: 8px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+.col-xs-9.plus, .col-xs-8.plus, .col-xs-7.plus, .col-xs-5.plus, .col-xs-4.plus, .col-xs-3.plus {
+    padding: 0;
+}
+
+@media (min-width: 900px) {
+    .col-xs-9.plus {
+        width: 74.5% !important;
+        margin-right: 0.5%;
+    }
+    .col-xs-8.plus {
+        width: 66% !important;
+        margin-right: 0.6667%;
+    }
+    .col-xs-7.plus {
+        width: 55.3333% !important;
+        margin-right: 0.5%;
+    }
+    .col-xs-5.plus {
+        width: 44.167% !important;
+    }
+    .col-xs-4.plus {
+        width: 33.3333% !important;
+    }
+    .col-xs-3.plus {
+        width: 25% !important;
+    }
+}
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 760px;
+    }
+    .col-xs-9.plus {
+        width: 74.5% !important;
+        margin-right: 0.5%;
+    }
+    .col-xs-3.plus {
+        width: 25% !important;
+    }
+}
+.panel {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    background: none;
+    box-shadow: none;
+}
+
+.panel:last-child {
+    border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+    border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+    margin-top: 0;
+}
+
+.panel-heading {
+    background-color: #fff;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    padding: 0;
+}
+
+.panel-title a {
+    display: block;
+    color: #000;
+    padding: 10px 0px 10px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+}
+.panel-title a:hover, .panel-title a:focus {
+    text-decoration: none;
+}
+
+.panel-body {
+    background: #fff;
+}
+
+.panel:last-child .panel-body {
+    border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+    border-radius: 0 0 4px 4px;
+    transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+    border-radius: 0;
+    transition: border-radius linear 0s;
+}
+/* #bs-collapse icon scale option */
+
+.panel-heading a:before {
+    content: '\e146';
+    position: absolute;
+    font-family: 'Material Icons';
+    right: 5px;
+    top: 10px;
+    font-size: 24px;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.panel-heading.active a:before {
+    content: ' ';
+    transition: all 0.5s;
+    transform: scale(0);
+}
+
+#bs-collapse .panel-heading a:after {
+    content: ' ';
+    font-size: 24px;
+    position: absolute;
+    font-family: 'Material Icons';
+    right: 5px;
+    top: 10px;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+
+#bs-collapse .panel-heading.active a:after {
+    content: '\e909';
+    transform: scale(1);
+    transition: all 0.5s;
+}
+/* #accordion rotate icon option */
+
+
+.accordions .panel-heading a:before {
+    content: '\e313';
+    font-size: 24px;
+    position: absolute;
+    font-family: 'Material Icons';
+    right: 5px;
+    top: 10px;
+    transform: rotate(270deg);
+    transition: all 0.5s;
+}
+
+.accordions .panel-heading.active a:before {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+
+.green-bck {
+    background-color: #e8ffe8;
+}
+#detail thead {
+    background-color: #e8ffe8;
+}
+.modal {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.modal-body strong {
+    font-size: 14px;
+}
+#acquis tbody tr td {
+    min-height: 135px;
+    display: block;
+}
+#filter-top {
+    background-color: #46a041;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0 30px 0;
+}
+#filter-top .big-title {
+    background-image: url("../img/big-title-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 50px;
+    color: #fff;
+}
+.small-title {
+    color: #93ca58;
+    margin-top: 15px;
+}
+.check-label {
+    padding-top: 4px;
+    display: block;
+    padding-left: 55px;
+    color: #fff;
+    font-size: 14px;
+}
+.ul-information {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.ul-information li {
+    clear: both;
+}
+.ul-no-pading-left ul {
+    padding-left: 0;
+}
+.ul-no-pading-rigth ul {
+    padding-right: 0;
+}
+.no-border-right {
+    border-right: 0 !important;
+}
+.border-left-separ {
+    border-left: 1px #e6ede5 solid !important;
+}
+.text-right ul li {
+    text-align: right;
+}
+
+
+.convention_collectivite_1 {
+    padding-left: 50px;
+}
+.convention_collectivite_2 {
+    padding-left: 54px;
+}
+
+.entete {
+    text-transform: uppercase;
+}
+
+.modal
+{
+    top:10%;
+ 
+    /*outline: none;*/
+
+}
+.big-title-en-euros {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text-gauche {
+    font-weight: bold;
+}
+.margin-left-au {
+    margin-left: 70px;
+}
+.taille-texte-haut-droite {
+   /* font-size: 14px;*/
+}
+.lieu-pmt-ass {
+    margin-left: 70px;
+    margin-top: -10px;
+}
+
+table.simple {
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    border-color: -moz-use-text-color #000 -moz-use-text-color -moz-use-text-color !important;
+    border-image: none !important;
+    border-radius: 0;
+    border-style: none solid none none !important;
+    border-width: 0 1px 0 0 !important;
+}
+table.simple > tbody > tr > td,
+table.simple > tbody > tr > th,
+table.simple > tfoot > tr > td,
+table.simple > tfoot > tr > th,
+table.simple > thead > tr > td,
+table.simple > thead > tr > th {
+    border: 1px solid #000 !important;
+}
+table.simple td:first-child, table.simple th:first-child {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+table.simple td:last-child, table.simple th:last-child {
+    border-bottom-right-radius: 0px;
+    border-right: 0 none !important;
+    border-top-right-radius: 0px;
+}
+table.simple > tbody > tr > td,
+table.simple > tbody > tr > th,
+table.simple > tfoot > tr > td,
+table.simple > tfoot > tr > th,
+table.simple > thead > tr > td,
+table.simple > thead > tr > th {
+    padding: 2px;
+}
+
+#td_designation {
+    min-width: 350px;
+}
+
+
+
+
+
+/* pb de position des modals quand intÃ©grÃ© dans un iframe*/
+#informations-professionnelles-1-modal, #informations-professionnelles-2-modal, #informations-professionnelles-3-modal {
+    top:20%;    outline: none;
+}
+
+#informations-journalieres-modal {
+    top:30%;    outline: none;
+}
+
+#elements-du-brut-modal {
+    top:30%;    outline: none;
+}
+
+#sante-modal {
+    top:35%;    outline: none;
+}
+
+#SCSG-modal{
+    top:40%;    outline: none;
+}
+
+#assurance-chomage-modal {
+    top:40%;    outline: none;
+}
+
+#retraite-modal {
+    top:50%;    outline: none;
+}
+
+#prevoyance-modal {
+    top:50%;    outline: none;
+}
+
+#autres-retenues-modal {
+    top:55%;    outline: none;
+}
+
+#TContrib-modal {
+    top:60%;    outline: none;
+}
+
+#zone-de-cumuls-modal {
+    top:75%;    outline: none;
+}
+
+#net-payer-modal {
+    top:75%;    outline: none;
+}
+
+#compteurs-individuels-modal {
+    top:85%;    outline: none;
+}
+
+#commentaires-modal {
+    top:85%;    outline: none;
+}
+
+
+
+
+
+#accidents-de-travail-modal {
+    top:45%;    outline: none;
+}
+
+#famille-securite-sociale-modal {
+    top:50%;    outline: none;
+}
+
+#autre-contributions-dues-par-employeur-modal {
+    top:55%;    outline: none;
+}
+
+#csg-crds-modal {
+    top:58%;    outline: none;
+}
+
+#total-info-modal, #virement-modal {
+    top:70%;    outline: none;
+}
+
+#acquis-modal {
+    top:80%;    outline: none;
+}
+
+
+
+
+
+#allegement-de-cotisations-modal {
+    top:45%;    outline: none;
+}
+
+
+
+
